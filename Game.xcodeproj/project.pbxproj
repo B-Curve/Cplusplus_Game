@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C521B24207A67D40084203E /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C521B22207A67D40084203E /* texture.cpp */; };
+		3C521B2A207A6D060084203E /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C521B28207A6D060084203E /* cube.cpp */; };
+		3C521B2D207A6FB70084203E /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C521B2B207A6FB70084203E /* camera.cpp */; };
 		3CA2A76920796C7E00E967AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2A76820796C7E00E967AB /* main.cpp */; };
+		3CA2A77120796CA800E967AB /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2A76F20796CA800E967AB /* window.cpp */; };
+		3CA2A77420796CF900E967AB /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A77320796CF900E967AB /* libglfw.3.2.dylib */; };
+		3CA2A77620796F9F00E967AB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A77520796F9F00E967AB /* OpenGL.framework */; };
+		3CA2A77D2079712F00E967AB /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2A77B2079712F00E967AB /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C521B22207A67D40084203E /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		3C521B23207A67D40084203E /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
+		3C521B27207A69260084203E /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		3C521B28207A6D060084203E /* cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
+		3C521B29207A6D060084203E /* cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cube.hpp; sourceTree = "<group>"; };
+		3C521B2B207A6FB70084203E /* camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		3C521B2C207A6FB70084203E /* camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
 		3CA2A76520796C7E00E967AB /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA2A76820796C7E00E967AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3CA2A76F20796CA800E967AB /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		3CA2A77020796CA800E967AB /* window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
+		3CA2A77320796CF900E967AB /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		3CA2A77520796F9F00E967AB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3CA2A7782079707900E967AB /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		3CA2A779207970A800E967AB /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		3CA2A77B2079712F00E967AB /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		3CA2A77C2079712F00E967AB /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA2A77620796F9F00E967AB /* OpenGL.framework in Frameworks */,
+				3CA2A77420796CF900E967AB /* libglfw.3.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C521B25207A68110084203E /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
 		3CA2A75C20796C7E00E967AB = {
 			isa = PBXGroup;
 			children = (
+				3C521B25207A68110084203E /* Textures */,
+				3CA2A7772079706100E967AB /* Shaders */,
 				3CA2A76720796C7E00E967AB /* Game */,
 				3CA2A76620796C7E00E967AB /* Products */,
+				3CA2A77220796CF900E967AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +91,46 @@
 		3CA2A76720796C7E00E967AB /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				3CA2A77A2079712500E967AB /* render */,
 				3CA2A76820796C7E00E967AB /* main.cpp */,
+				3CA2A76F20796CA800E967AB /* window.cpp */,
+				3CA2A77020796CA800E967AB /* window.hpp */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		3CA2A77220796CF900E967AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A77520796F9F00E967AB /* OpenGL.framework */,
+				3CA2A77320796CF900E967AB /* libglfw.3.2.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CA2A7772079706100E967AB /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A7782079707900E967AB /* shader.vert */,
+				3CA2A779207970A800E967AB /* shader.frag */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		3CA2A77A2079712500E967AB /* render */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A77B2079712F00E967AB /* shader.cpp */,
+				3CA2A77C2079712F00E967AB /* shader.hpp */,
+				3C521B22207A67D40084203E /* texture.cpp */,
+				3C521B23207A67D40084203E /* texture.hpp */,
+				3C521B27207A69260084203E /* stb_image.h */,
+				3C521B28207A6D060084203E /* cube.cpp */,
+				3C521B29207A6D060084203E /* cube.hpp */,
+				3C521B2B207A6FB70084203E /* camera.cpp */,
+				3C521B2C207A6FB70084203E /* camera.hpp */,
+			);
+			path = render;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA2A77D2079712F00E967AB /* shader.cpp in Sources */,
+				3C521B24207A67D40084203E /* texture.cpp in Sources */,
 				3CA2A76920796C7E00E967AB /* main.cpp in Sources */,
+				3C521B2A207A6D060084203E /* cube.cpp in Sources */,
+				3C521B2D207A6FB70084203E /* camera.cpp in Sources */,
+				3CA2A77120796CA800E967AB /* window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +309,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.2.1/include,
+					/usr/local/Cellar/glm/0.9.8.5/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +325,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.2.1/include,
+					/usr/local/Cellar/glm/0.9.8.5/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
